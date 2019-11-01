@@ -1,5 +1,5 @@
 <?php
-class siswa extends Database
+class Siswa extends Database
 {
     // Menampilkan Semua Data
     public function index()
@@ -14,7 +14,7 @@ class siswa extends Database
     {
         mysqli_query(
             $this->koneksi,
-            "insert into siswa values(null,'$nis','$nama','$alamat'"
+            "insert into siswa values(null,'$nama','$nis','$alamat')"
         );
     }
     // Menampilkan Data Berdasarkan ID
@@ -39,7 +39,7 @@ class siswa extends Database
     {
         mysqli_query(
             $this->koneksi,
-            "update siswa set nis = '$nis', nama = '$nama',
+            "update siswa set nama = '$nama', nis = '$nis',
         alamat = '$alamat' where id='$id'"
         );
     }

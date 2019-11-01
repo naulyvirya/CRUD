@@ -13,7 +13,7 @@ class Database
             $this->db
         );
         if ($this->koneksi) {
-            # echo "Berhasil";
+            // echo "Berhasil";
         } else {
             echo "Koneksi Database Gagal";
         }
