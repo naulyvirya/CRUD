@@ -22,6 +22,9 @@ class Database
 // Data tabel siswa
 include 'siswa.php';
 
+// Data tabel biodata
+include 'biodata.php';
+
 // Data tabel DB
 $db = new Database();
 ?>
